@@ -6,6 +6,5 @@ public class Aplicacao {
         Primeiro primeiraInstancia = new Primeiro();
         primeiraInstancia.primeiroProjeto();
 
-
     }
 }
