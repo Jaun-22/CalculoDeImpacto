@@ -7,7 +7,6 @@ public class Primeiro {
 
         boolean validador = true;
 
-
         while (validador) {
 
             Scanner scanner = new Scanner(System.in);
@@ -36,28 +35,45 @@ public class Primeiro {
                         valorVelocidade = scanner.nextFloat();
 
                     }
+
                     float calculo = valorMassa * valorVelocidade;
-                    System.out.println(calculo);
 
+                    System.out.println(calculo + "N");
 
-                    break;
+                    if (calculo < 100) {
+                        System.out.println("COLISÂO  DE BAIXISSIMA INTENSIDADE:");
+                        System.out.println("Escala de danos ao boneco: 2");
 
+                    } else if (calculo < 700) {
+                        System.out.println("COLISÃO DE BAIXA INTENSIDADE:");
+                        System.out.println("Escala de danos ao boneco: 4");
+
+                    } else if (calculo < 1400) {
+                        System.out.println("COLISÃO DE INTENSIDADE MODERADA: ");
+                        System.out.println("Escala de danos ao boneco: 6");
+
+                    } else if (calculo < 2100) {
+                        System.out.println("COLISÃO DE INTENSIDADE ALTA: ");
+                        System.out.println("Escala de danos ao boneco: 8");
+
+                    } else {
+                        System.out.println("COLISÃO DE INTENSIDADE ALTÍSSIMA: ");
+                        System.out.println("Escala de danos ao boneco: 10");
+
+                    }
                 }
+                break;
+
                 case 2:
                     System.out.println("programa encerrado");
                     validador = false;
                     break;
                 default:
                     System.out.println("valor incorreto");
-
-
             }
-
-
         }
-
-
     }
-
 }
+
+
 
