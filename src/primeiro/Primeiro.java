@@ -27,7 +27,7 @@ public class Primeiro {
                         valorMassa = scanner.nextFloat();
                     }
 
-                    System.out.println("Digite a velocidade do veiculo: ");
+                    System.out.println("Digite a velocidade do veiculo : (entre 0km/h até 1000km/h)");
                     float valorVelocidade = scanner.nextFloat();
 
                     while (valorVelocidade < 0 || valorVelocidade > 1000) {
@@ -38,7 +38,7 @@ public class Primeiro {
 
                     float calculo = valorMassa * valorVelocidade;
 
-                    System.out.println(calculo + "N");
+                    System.out.println("O Valor do impacto em Newtons foi: " +calculo + " N\n");
 
                     if (calculo < 100) {
                         System.out.println("COLISÂO  DE BAIXISSIMA INTENSIDADE:");
